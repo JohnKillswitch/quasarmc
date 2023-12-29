@@ -1,0 +1,59 @@
+{
+  "mod_elements": [
+    {
+      "name": "Adad",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/command/AdadCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Nvkghvghnkvghk",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nvkghvghnkvghk",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.minecraft.splash_potion.effect.nvkghvghnkvghk": "Splash Potion of Nvkghvghnkvghk",
+      "item.minecraft.potion.effect.nvkghvghnkvghk": "Potion of Nvkghvghnkvghk",
+      "item.minecraft.lingering_potion.effect.nvkghvghnkvghk": "Lingering Potion of Nvkghvghnkvghk",
+      "item.minecraft.tipped_arrow.effect.nvkghvghnkvghk": "Arrow of Nvkghvghnkvghk"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "quasarmc",
+    "modName": "QuasarMC",
+    "version": "1.0.0",
+    "author": "ya, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.quasarmc.quasarmc",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
