@@ -1,9 +1,26 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Sperma",
+      "type": "rangeditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sperma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/entity/SpermaEntity.java",
+          "src/main/resources/assets/quasarmc/models/item/sperma.json",
+          "src/main/java/net/quasarmc/quasarmc/item/SpermaItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.quasarmc.sperma": "Sperma"
+    }
   },
   "foldersRoot": {
     "name": "~",

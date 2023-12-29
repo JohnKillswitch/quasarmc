@@ -4,7 +4,7 @@
  */
 package net.quasarmc.quasarmc.init;
 
-import net.quasarmc.quasarmc.item.FiefiefiefieItem;
+import net.quasarmc.quasarmc.item.SpermaItem;
 import net.quasarmc.quasarmc.QuasarmcMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -15,5 +15,5 @@ import net.minecraft.world.item.Item;
 
 public class QuasarmcModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, QuasarmcMod.MODID);
-	public static final RegistryObject<Item> FIEFIEFIEFIE = REGISTRY.register("fiefiefiefie", () -> new FiefiefiefieItem());
+	public static final RegistryObject<Item> SPERMA = REGISTRY.register("sperma", () -> new SpermaItem());
 }

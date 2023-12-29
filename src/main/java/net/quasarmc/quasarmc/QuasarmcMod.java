@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 
 import net.quasarmc.quasarmc.init.QuasarmcModTabs;
 import net.quasarmc.quasarmc.init.QuasarmcModItems;
+import net.quasarmc.quasarmc.init.QuasarmcModEntities;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -51,6 +52,7 @@ public class QuasarmcMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		QuasarmcModItems.REGISTRY.register(bus);
+		QuasarmcModEntities.REGISTRY.register(bus);
 
 		QuasarmcModTabs.REGISTRY.register(bus);
 

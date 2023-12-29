@@ -22,8 +22,8 @@ public class QuasarmcModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(QuasarmcModItems.FIEFIEFIEFIE.get());
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(QuasarmcModItems.SPERMA.get());
 		}
 	}
 }
