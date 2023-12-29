@@ -8,10 +8,10 @@ import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraft.commands.Commands;
 
 @Mod.EventBusSubscriber
-public class AdadCommand {
+public class IeyieyieCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("adad")
+		event.getDispatcher().register(Commands.literal("ieyieyie")
 
 		);
 	}
