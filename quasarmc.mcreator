@@ -1,25 +1,9 @@
 {
-  "mod_elements": [
-    {
-      "name": "Fiefiefiefie",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiefiefiefie",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/quasarmc/models/item/fiefiefiefie.json",
-          "src/main/java/net/quasarmc/quasarmc/item/FiefiefiefieItem.java"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "item.quasarmc.fiefiefiefie": "Fiefiefiefie"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
