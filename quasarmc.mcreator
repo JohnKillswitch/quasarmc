@@ -1,25 +1,16 @@
 {
   "mod_elements": [
     {
-      "name": "Adad",
-      "type": "command",
+      "name": "Fiefiefiefie",
+      "type": "tool",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adad",
+      "registry_name": "fiefiefiefie",
       "metadata": {
         "files": [
-          "src/main/java/net/quasarmc/quasarmc/command/AdadCommand.java"
+          "src/main/resources/assets/quasarmc/models/item/fiefiefiefie.json",
+          "src/main/java/net/quasarmc/quasarmc/item/FiefiefiefieItem.java"
         ]
-      }
-    },
-    {
-      "name": "Nvkghvghnkvghk",
-      "type": "potion",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nvkghvghnkvghk",
-      "metadata": {
-        "files": []
       }
     }
   ],
@@ -27,10 +18,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.nvkghvghnkvghk": "Splash Potion of Nvkghvghnkvghk",
-      "item.minecraft.potion.effect.nvkghvghnkvghk": "Potion of Nvkghvghnkvghk",
-      "item.minecraft.lingering_potion.effect.nvkghvghnkvghk": "Lingering Potion of Nvkghvghnkvghk",
-      "item.minecraft.tipped_arrow.effect.nvkghvghnkvghk": "Arrow of Nvkghvghnkvghk"
+      "item.quasarmc.fiefiefiefie": "Fiefiefiefie"
     }
   },
   "foldersRoot": {
