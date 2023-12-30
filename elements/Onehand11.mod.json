@@ -2,14 +2,14 @@
   "_fv": 47,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "renderType": 0,
     "texture": "579ydp",
     "customModelName": "Normal",
     "name": "Onehand 1 1",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "COMBAT"
     },
     "harvestLevel": 1,
     "efficiency": 4.0,
@@ -24,7 +24,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onCrafted": {
-      "name": "SwordCrafted"
+      "name": "SwordCraftProcedure"
     },
     "onEntityHitWith": {
       "name": "SwordHitProcedure"

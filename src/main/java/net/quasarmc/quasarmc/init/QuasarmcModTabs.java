@@ -23,10 +23,6 @@ public class QuasarmcModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(QuasarmcModItems.SPERMA.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(QuasarmcModItems.ONEHAND_11.get());
 		}
 	}

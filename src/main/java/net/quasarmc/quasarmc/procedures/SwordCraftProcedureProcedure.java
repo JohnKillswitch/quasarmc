@@ -4,7 +4,7 @@ import net.quasarmc.quasarmc.init.QuasarmcModItems;
 
 import net.minecraft.world.item.ItemStack;
 
-public class SwordCraftedProcedure {
+public class SwordCraftProcedureProcedure {
 	public static void execute(ItemStack itemstack) {
 		if (itemstack.getItem() == QuasarmcModItems.ONEHAND_11.get()) {
 			itemstack.getOrCreateTag().putDouble("WalkSpeed", (-0.6));

@@ -1,21 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Sperma",
-      "type": "rangeditem",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sperma",
-      "metadata": {
-        "files": [
-          "src/main/java/net/quasarmc/quasarmc/entity/SpermaEntity.java",
-          "src/main/java/net/quasarmc/quasarmc/item/SpermaItem.java",
-          "src/main/resources/assets/quasarmc/models/item/sperma.json"
-        ]
-      }
-    },
-    {
       "name": "Onehand11",
       "type": "tool",
       "sortid": 2,
@@ -31,15 +16,29 @@
       "path": "~/items/swords/Onehand"
     },
     {
-      "name": "SwordCrafted",
-      "type": "procedure",
-      "sortid": 3,
+      "name": "Test",
+      "type": "recipe",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sword_crafted",
+      "registry_name": "test",
       "metadata": {
         "files": [
-          "src/main/java/net/quasarmc/quasarmc/procedures/SwordCraftedProcedure.java"
+          "src/main/resources/data/quasarmc/recipes/test.json"
+        ]
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "SwordCraftProcedure",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_craft_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/SwordCraftProcedureProcedure.java"
         ],
         "dependencies": [
           {
@@ -48,12 +47,12 @@
           }
         ]
       },
-      "path": "~/items/swords/Onehand"
+      "path": "~/items/swords/Sword_Procedures"
     },
     {
       "name": "SwordHitProcedure",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_hit_procedure",
@@ -80,47 +79,32 @@
           }
         ]
       },
-      "path": "~/items/swords/Onehand"
+      "path": "~/items/swords/Sword_Procedures"
     },
     {
-      "name": "Test",
-      "type": "recipe",
-      "sortid": 5,
+      "name": "ModSwords",
+      "type": "tag",
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test",
+      "registry_name": "mod_swords",
       "metadata": {
         "files": [
-          "src/main/resources/data/quasarmc/recipes/test.json"
+          "src/main/resources/data/forge/tags/items/mod_swords.json"
         ]
       },
-      "path": "~/items/swords/Onehand"
+      "path": "~/tags"
     },
     {
-      "name": "SwordHeldProcedure",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_held_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/quasarmc/quasarmc/procedures/SwordHeldProcedureProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/items/swords/Onehand"
-    },
-    {
-      "name": "OnehandSword",
+      "name": "OneHandSwords",
       "type": "tag",
-      "sortid": 7,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "onehand_sword",
+      "registry_name": "one_hand_swords",
       "metadata": {
         "files": [
-          "src/main/resources/data/forge/tags/items/onehand_sword.json"
+          "src/main/resources/data/forge/tags/items/one_hand_swords.json"
         ]
       },
       "path": "~/tags"
@@ -161,7 +145,6 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.quasarmc.sperma": "Sperma",
       "item.quasarmc.onehand_11": "Onehand 1 1"
     }
   },
@@ -183,11 +166,19 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "item_procedures",
+            "children": []
           }
         ]
       },
       {
         "name": "tags",
+        "children": []
+      },
+      {
+        "name": "procedures",
         "children": []
       }
     ]

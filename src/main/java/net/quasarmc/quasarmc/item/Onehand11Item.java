@@ -2,18 +2,18 @@
 package net.quasarmc.quasarmc.item;
 
 import net.quasarmc.quasarmc.procedures.SwordHitProcedureProcedure;
-import net.quasarmc.quasarmc.procedures.SwordCraftedProcedure;
+import net.quasarmc.quasarmc.procedures.SwordCraftProcedureProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
-public class Onehand11Item extends PickaxeItem {
+public class Onehand11Item extends SwordItem {
 	public Onehand11Item() {
 		super(new Tier() {
 			public int getUses() {
@@ -39,7 +39,7 @@ public class Onehand11Item extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 1, -3.1f, new Item.Properties());
+		}, 3, -3.1f, new Item.Properties());
 	}
 
 	@Override
@@ -52,6 +52,6 @@ public class Onehand11Item extends PickaxeItem {
 	@Override
 	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
 		super.onCraftedBy(itemstack, world, entity);
-		SwordCraftedProcedure.execute(itemstack);
+		SwordCraftProcedureProcedure.execute(itemstack);
 	}
 }
