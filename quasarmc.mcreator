@@ -1,9 +1,44 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Yh",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/item/YhItem.java",
+          "src/main/resources/assets/quasarmc/models/item/yh.json"
+        ]
+      }
+    },
+    {
+      "name": "YhPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yh_property_value_provider",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/YhPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.quasarmc.yh": "Yh"
+    }
   },
   "foldersRoot": {
     "name": "~",
