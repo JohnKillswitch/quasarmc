@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "quasarmc:onehand_11",
+    "count": 1
+  }
+}

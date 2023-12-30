@@ -1,40 +1,9 @@
 {
   "mod_elements": [
     {
-      "name": "YhPropertyValueProvider",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yh_property_value_provider",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/quasarmc/quasarmc/procedures/YhPropertyValueProviderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Yh",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yh",
-      "metadata": {
-        "files": [
-          "src/main/java/net/quasarmc/quasarmc/item/YhItem.java",
-          "src/main/resources/assets/quasarmc/models/item/yh.json"
-        ]
-      }
-    },
-    {
       "name": "Sperma",
       "type": "rangeditem",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sperma",
@@ -45,16 +14,183 @@
           "src/main/resources/assets/quasarmc/models/item/sperma.json"
         ]
       }
+    },
+    {
+      "name": "Onehand11",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onehand_11",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasarmc/models/item/onehand_11.json",
+          "src/main/java/net/quasarmc/quasarmc/item/Onehand11Item.java"
+        ]
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "SwordCrafted",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_crafted",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/SwordCraftedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "SwordHitProcedure",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_hit_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/SwordHitProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "Test",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quasarmc/recipes/test.json"
+        ]
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "SwordHeldProcedure",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_held_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/SwordHeldProcedureProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/swords/Onehand"
+    },
+    {
+      "name": "OnehandSword",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onehand_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/onehand_sword.json"
+        ]
+      },
+      "path": "~/tags"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "pvp_damage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "pve_damage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "walkspeed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "crit_chance",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "crit_damage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.quasarmc.sperma": "Sperma",
+      "item.quasarmc.onehand_11": "Onehand 1 1"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "items",
+        "children": [
+          {
+            "name": "swords",
+            "children": [
+              {
+                "name": "Onehand",
+                "children": []
+              },
+              {
+                "name": "Sword_Procedures",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tags",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "quasarmc",

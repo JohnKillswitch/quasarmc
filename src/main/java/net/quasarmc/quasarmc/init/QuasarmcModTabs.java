@@ -25,5 +25,9 @@ public class QuasarmcModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(QuasarmcModItems.SPERMA.get());
 		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(QuasarmcModItems.ONEHAND_11.get());
+		}
 	}
 }
