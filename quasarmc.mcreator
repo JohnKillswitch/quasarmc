@@ -1,19 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Yh",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yh",
-      "metadata": {
-        "files": [
-          "src/main/java/net/quasarmc/quasarmc/item/YhItem.java",
-          "src/main/resources/assets/quasarmc/models/item/yh.json"
-        ]
-      }
-    },
-    {
       "name": "YhPropertyValueProvider",
       "type": "procedure",
       "compiles": true,
@@ -31,14 +18,39 @@
           }
         ]
       }
+    },
+    {
+      "name": "Yh",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/item/YhItem.java",
+          "src/main/resources/assets/quasarmc/models/item/yh.json"
+        ]
+      }
+    },
+    {
+      "name": "Sperma",
+      "type": "rangeditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sperma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/entity/SpermaEntity.java",
+          "src/main/java/net/quasarmc/quasarmc/item/SpermaItem.java",
+          "src/main/resources/assets/quasarmc/models/item/sperma.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "item.quasarmc.yh": "Yh"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",

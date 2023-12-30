@@ -1,7 +1,8 @@
 package net.quasarmc.quasarmc.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class YhPropertyValueProviderProcedure {
 	public static boolean execute(Entity entity) {
