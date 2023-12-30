@@ -108,6 +108,21 @@
         ]
       },
       "path": "~/tags"
+    },
+    {
+      "name": "ItemHeldProcedure",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_held_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/quasarmc/quasarmc/procedures/ItemHeldProcedureProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/modifiers"
     }
   ],
   "variable_elements": [
@@ -179,6 +194,10 @@
       },
       {
         "name": "procedures",
+        "children": []
+      },
+      {
+        "name": "modifiers",
         "children": []
       }
     ]
